@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nrityadhee | Kathak, Semi-Classical, Bollywood & Folk Dance</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Light off-white background */
+            scroll-behavior: smooth;
+        }
+        /* Custom scroll animation classes */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Custom colors for the dance theme */
+        .color-primary { color: #512DA8; } /* Deep Violet/Indigo */
+        .bg-primary { background-color: #512DA8; }
+        .text-accent { color: #FFB300; } /* Amber/Gold */
+        .border-accent { border-color: #FFB300; }
+        .bg-gradient-dance {
+            background-image: linear-gradient(135deg, #673AB7 0%, #303F9F 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo/Studio Name -->
+            <div class="text-3xl font-extrabold color-primary tracking-wider">
+                Nrityadhee
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="text-gray-600 hover:text-accent transition duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-accent transition duration-300">About Us</a>
+                <a href="#classes" class="text-gray-600 hover:text-accent transition duration-300">Classes</a>
+                <a href="#contact" class="text-gray-600 hover:text-accent transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (Placeholder for functionality) -->
+            <button class="md:hidden text-gray-600 hover:text-accent focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="relative pt-32 pb-40 bg-gradient-dance text-white overflow-hidden shadow-2xl">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-reveal">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tighter">
+                    The Art of Expression
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light max-w-3xl mx-auto">
+                    Master Kathak, Semi-Classical, Bollywood, and Folk Dance forms.
+                </p>
+                <a href="#classes" class="inline-block bg-accent text-primary font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                    Find Your Class Today
+                </a>
+            </div>
+            <!-- Playful Dance Touch (Subtle SVG/Visual Element) -->
+            <div class="absolute inset-x-0 bottom-0 h-1/4 opacity-10" style="background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23FFFFFF" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,90.7C672,85,768,107,864,138.7C960,171,1056,213,1152,208C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat center bottom; background-size: cover;"></div>
+        </section>
+
+        <!-- 2. About Us Section (Surbhi Verma's Story) -->
+        <section id="about" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center color-primary mb-12 scroll-reveal">Our Founder & Vision</h2>
+                
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <!-- Image Placeholder -->
+                    <div class="md:w-1/3 flex-shrink-0 scroll-reveal">
+                        <img src="https://placehold.co/400x500/512DA8/FFFFFF?text=Surbhi+Verma" alt="Surbhi Verma, Founder of Nrityadhee" class="w-full h-auto object-cover rounded-xl shadow-2xl border-4 border-accent" onerror="this.onerror=null; this.src='https://placehold.co/400x500/512DA8/FFFFFF?text=Surbhi+Verma';">
+                    </div>
+
+                    <!-- Story Content -->
+                    <div class="md:w-2/3 scroll-reveal">
+                        <h3 class="text-3xl font-bold color-primary mb-4">Surbhi Verma: The Journey of Nrityadhee</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            Nrityadhee was founded by **Surbhi Verma**, a young and accomplished **MA professional Kathak dancer**. Launched in the vibrant cultural heart of **Jaipur**, her vision was to create a sanctuary where the rigorous discipline of classical dance meets the free spirit of modern expression.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Having successfully established a thriving, community-focused studio in Jaipur, Surbhi is now spearheading Nrityadhee’s ambitious expansion. Her goal is to achieve a **pan-India presence**, bringing the highest quality training in Kathak (including **degree/diploma courses**) and diverse expressive dance forms to enthusiasts everywhere.
+                        </p>
+                        <p class="text-lg font-semibold text-accent mt-6">
+                            "Let’s dance, express, and shine together! 🌟"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Classes/Specializations Section -->
+        <section id="classes" class="py-20 md:py-32 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center color-primary mb-16 scroll-reveal">Our Dance Offerings</h2>
+
+                <!-- Specializations Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Kathak -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 scroll-reveal">
+                        <div class="text-5xl text-accent mb-4 text-center">🩰</div>
+                        <h3 class="text-xl font-bold color-primary mb-2 text-center">Kathak</h3>
+                        <p class="text-gray-600 text-center text-sm">Classical Indian dance. Offering **Degree & Diploma** certifications.</p>
+                    </div>
+
+                    <!-- Semi-Classical -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 scroll-reveal" style="transition-delay: 0.1s;">
+                        <div class="text-5xl text-accent mb-4 text-center">🧡</div>
+                        <h3 class="text-xl font-bold color-primary mb-2 text-center">Semi-Classical</h3>
+                        <p class="text-gray-600 text-center text-sm">A beautiful fusion of traditional technique and contemporary feel.</p>
+                    </div>
+
+                    <!-- Bollywood -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 scroll-reveal" style="transition-delay: 0.2s;">
+                        <div class="text-5xl text-accent mb-4 text-center">🕺</div>
+                        <h3 class="text-xl font-bold color-primary mb-2 text-center">Bollywood</h3>
+                        <p class="text-gray-600 text-center text-sm">High-energy, cinematic choreography from Indian cinema.</p>
+                    </div>
+
+                    <!-- Folk -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 scroll-reveal" style="transition-delay: 0.3s;">
+                        <div class="text-5xl text-accent mb-4 text-center">🥁</div>
+                        <h3 class="text-xl font-bold color-primary mb-2 text-center">Folk Dance</h3>
+                        <p class="text-gray-600 text-center text-sm">Vibrant and rhythmic dances from various Indian regions.</p>
+                    </div>
+                </div>
+
+                <!-- Class Format -->
+                <div class="mt-16 text-center scroll-reveal">
+                    <h3 class="text-2xl font-extrabold text-gray-800 mb-4">Flexible Learning</h3>
+                    <div class="flex justify-center space-x-6 text-lg font-semibold">
+                        <span class="p-3 bg-primary text-white rounded-lg shadow-md">Online Classes Available 💻</span>
+                        <span class="p-3 bg-primary text-white rounded-lg shadow-md">Offline Studio Training 🏢</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Contact & Location Section -->
+        <section id="contact" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center color-primary mb-12 scroll-reveal">Connect With Us</h2>
+                
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+                    <!-- Phone Numbers -->
+                    <div class="p-6 rounded-xl border border-gray-200 shadow-md scroll-reveal">
+                        <div class="text-3xl text-accent mb-3">📞</div>
+                        <h3 class="text-xl font-bold color-primary mb-2">Inquiries & Registration</h3>
+                        <p class="text-gray-700 font-medium">9571623678</p>
+                        <p class="text-gray-700 font-medium">8118838273</p>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="p-6 rounded-xl border border-gray-200 shadow-md scroll-reveal" style="transition-delay: 0.1s;">
+                        <div class="text-3xl text-accent mb-3">📍</div>
+                        <h3 class="text-xl font-bold color-primary mb-2">Our Jaipur Studio</h3>
+                        <a href="https://g.co/kgs/p112XgH" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-accent underline font-medium">View on Google Maps</a>
+                        <p class="text-sm text-gray-500 mt-2">(Current location, expanding pan-India)</p>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="p-6 rounded-xl border border-gray-200 shadow-md scroll-reveal" style="transition-delay: 0.2s;">
+                        <div class="text-3xl text-accent mb-3">📸</div>
+                        <h3 class="text-xl font-bold color-primary mb-2">Follow Our Journey</h3>
+                        <div class="space-y-2">
+                            <a href="https://www.instagram.com/nrityadhee_jaipur" target="_blank" rel="noopener noreferrer" class="block text-gray-700 hover:text-accent font-medium transition duration-200">Instagram: nrityadhee_jaipur</a>
+                            <a href="https://youtube.com/@nrityadhee_jaipur?si=zZ9DVsTBiG-Izdpv" target="_blank" rel="noopener noreferrer" class="block text-gray-700 hover:text-accent font-medium transition duration-200">YouTube Channel</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Embed Placeholder (Optional visual element) -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center scroll-reveal">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">Watch Our Performances</h3>
+                <p class="mb-4 text-gray-600">Catch a glimpse of the grace and talent at Nrityadhee.</p>
+                <!-- Placeholder for a responsive YouTube video -->
+                <div class="max-w-2xl mx-auto bg-gray-200 rounded-xl shadow-lg overflow-hidden border-4 border-gray-300">
+                    <div class="relative" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                        <!-- If embedding directly: -->
+                        <!-- <iframe class="absolute top-0 left-0 w-full h-full" src="[YOUR_YOUTUBE_EMBED_LINK]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 text-white text-xl font-bold">
+                            VIDEO PREVIEW
+                            <br>
+                            Link: youtube.com/@nrityadhee_jaipur
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2024 Nrityadhee. All rights reserved.</p>
+            <p class="mt-2">Dedicated to the timeless art of dance and expression.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script>
+        const scrollReveal = () => {
+            const elements = document.querySelectorAll('.scroll-reveal');
+            
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const viewportHeight = window.innerHeight;
+                
+                // If the top of the element is visible (adjust 150px offset)
+                if (elementTop < viewportHeight - 150) {
+                    el.classList.add('visible');
+                } else {
+                    // Optional: remove visible class if you want elements to re-hide on scroll up
+                    // el.classList.remove('visible'); 
+                }
+            });
+        };
+
+        // Run on page load and on scroll
+        window.addEventListener('load', scrollReveal);
+        window.addEventListener('scroll', scrollReveal);
+    </script>
+
+</body>
+</html>
